@@ -45,8 +45,20 @@ a {
 }
 
 /* Header */
-.header {
+
+.fixed-header{
+    position: sticky;
+    padding-top: 26px;
+    background: #e6f0ff;
+    top: -26px;
+    z-index: 1;
+
+}
+
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -54,7 +66,8 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+
+    padding: 12px 0;
 }
 .navbar ul {
     display: flex;
@@ -575,6 +588,7 @@ a {
     margin-right: 16px;
     background: tomato;
 }
+
 
 .footer .row-bottom{
     margin-top: 81px;
